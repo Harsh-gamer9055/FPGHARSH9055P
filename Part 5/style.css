@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color : whitesmoke;
+    text-align: center;
+}
+
+p{
+    background-color: aqua;
+}
+
+a{
+    background-color: lime;
+}
+
+div{
+    background-color: yellow;
+}
+
+span{
+    background-color: blueviolet;
+}
