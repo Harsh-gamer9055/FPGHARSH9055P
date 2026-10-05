@@ -1,0 +1,657 @@
+/* =====================================================
+   STRIDE GROWTH
+   Privacy Policy
+   Navy / Blue / White Theme
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+
+:root {
+
+    --primary: #3B82F6;
+    --primary-light: #60A5FA;
+
+    --bg: #071A33;
+    --bg2: #0B2344;
+    --card: #102648;
+
+    --text: #FFFFFF;
+    --gray: #94A3B8;
+
+    --border: rgba(255,255,255,.08);
+
+}
+
+
+/* ================= RESET ================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    background: var(--bg);
+
+    color: var(--text);
+
+    line-height: 1.8;
+
+    overflow-x: hidden;
+
+}
+
+
+/* ================= BACKGROUND ================= */
+
+.background-glow {
+
+    position: fixed;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    filter: blur(100px);
+
+    z-index: -1;
+
+}
+
+
+.glow-one {
+
+    width: 500px;
+
+    height: 500px;
+
+    top: -200px;
+
+    right: -150px;
+
+    background: rgba(59,130,246,.16);
+
+}
+
+
+.glow-two {
+
+    width: 400px;
+
+    height: 400px;
+
+    bottom: -200px;
+
+    left: -150px;
+
+    background: rgba(37,99,235,.10);
+
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+
+    width: min(1100px, 92%);
+
+    margin: auto;
+
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    width: 100%;
+
+    background: rgba(7,26,51,.92);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid var(--border);
+
+    z-index: 1000;
+
+}
+
+
+.navbar-inner {
+
+    min-height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+/* ================= LOGO ================= */
+
+.logo {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+    letter-spacing: .5px;
+
+}
+
+
+.logo span {
+
+    color: var(--primary);
+
+}
+
+
+/* ================= BACK BUTTON ================= */
+
+.back-button {
+
+    text-decoration: none;
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    padding: 11px 20px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+.back-button:hover {
+
+    background: white;
+
+    color: var(--bg);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ================= PRIVACY PAGE ================= */
+
+.privacy-page {
+
+    padding: 100px 0 120px;
+
+}
+
+
+/* ================= HEADER ================= */
+
+.privacy-header {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+
+}
+
+
+.policy-label {
+
+    display: inline-block;
+
+    color: var(--primary-light);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.privacy-header h1 {
+
+    font-size: 58px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+
+}
+
+
+.last-updated {
+
+    color: var(--gray);
+
+    font-size: 15px;
+
+}
+
+
+/* ================= POLICY CARD ================= */
+
+.privacy-card {
+
+    background: linear-gradient(
+        180deg,
+        rgba(16,38,72,.98),
+        rgba(11,35,68,.98)
+    );
+
+    border: 1px solid var(--border);
+
+    border-radius: 24px;
+
+    padding: 65px;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.30);
+
+}
+
+
+/* ================= TEXT ================= */
+
+.privacy-card p {
+
+    color: #D6E0EC;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 22px;
+
+}
+
+
+.privacy-card h2 {
+
+    color: white;
+
+    font-size: 30px;
+
+    line-height: 1.3;
+
+    margin-top: 55px;
+
+    margin-bottom: 22px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+}
+
+
+.privacy-card h2:first-of-type {
+
+    margin-top: 15px;
+
+}
+
+
+.privacy-card h3 {
+
+    color: var(--primary-light);
+
+    font-size: 21px;
+
+    margin-top: 32px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.privacy-card h4 {
+
+    color: white;
+
+    font-size: 18px;
+
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.privacy-card strong {
+
+    color: white;
+
+}
+
+
+/* ================= LISTS ================= */
+
+.privacy-card ul {
+
+    margin: 15px 0 25px 25px;
+
+}
+
+
+.privacy-card li {
+
+    color: #CBD5E1;
+
+    margin-bottom: 12px;
+
+    padding-left: 7px;
+
+    line-height: 1.8;
+
+}
+
+
+.privacy-card li::marker {
+
+    color: var(--primary-light);
+
+}
+
+
+/* ================= CONTACT BOX ================= */
+
+.contact-box {
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background: rgba(59,130,246,.08);
+
+    border: 1px solid rgba(59,130,246,.20);
+
+    border-radius: 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.contact-box strong {
+
+    color: var(--primary-light);
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+.contact-box a {
+
+    color: white;
+
+    font-size: 17px;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+
+.contact-box a:hover {
+
+    color: var(--primary-light);
+
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+
+    background: #04111F;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    padding: 65px 0 25px;
+
+}
+
+
+.footer-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding-bottom: 45px;
+
+}
+
+
+.footer h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.footer h2 span {
+
+    color: var(--primary-light);
+
+}
+
+
+.footer p {
+
+    color: var(--gray);
+
+    max-width: 400px;
+
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    align-items: center;
+
+}
+
+
+.footer-links a {
+
+    color: var(--gray);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: .3s;
+
+}
+
+
+.footer-links a:hover {
+
+    color: white;
+
+}
+
+
+/* ================= COPYRIGHT ================= */
+
+.copyright {
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    padding-top: 22px;
+
+    text-align: center;
+
+    color: var(--gray);
+
+    font-size: 13px;
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .navbar-inner {
+
+        min-height: 72px;
+
+    }
+
+
+    .privacy-page {
+
+        padding: 70px 0 80px;
+
+    }
+
+
+    .privacy-header h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .privacy-card {
+
+        padding: 32px 24px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .privacy-card h2 {
+
+        font-size: 26px;
+
+        margin-top: 45px;
+
+    }
+
+
+    .privacy-card h3 {
+
+        font-size: 20px;
+
+    }
+
+
+    .footer-content {
+
+        flex-direction: column;
+
+    }
+
+
+    .footer-links {
+
+        gap: 15px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .logo {
+
+        font-size: 19px;
+
+    }
+
+
+    .back-button {
+
+        padding: 9px 13px;
+
+        font-size: 12px;
+
+    }
+
+
+    .privacy-header h1 {
+
+        font-size: 36px;
+
+    }
+
+
+    .privacy-card {
+
+        padding: 25px 18px;
+
+    }
+
+
+    .privacy-card p,
+    .privacy-card li {
+
+        font-size: 15px;
+
+    }
+
+}
